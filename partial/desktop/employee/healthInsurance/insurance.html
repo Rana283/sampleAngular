@@ -1,0 +1,13 @@
+<div class="col-xs-12 borderClass">
+    <div class="col-xs-8">
+        <table ng-table  class="table table-bordered">
+            <tr ng-repeat="emp in healthInsurance">
+                <td data-title="'S.Num'">{{$index+1}}</td> 
+             <td data-title="'Name'">{{emp.name}}</td>
+                <td data-title="'Relation'">{{emp.relation}}</td>
+                <td data-title="'Date Of Birth'">{{emp.dob}}
+                </td> 
+            </tr>
+        </table>
+    </div>
+</div>

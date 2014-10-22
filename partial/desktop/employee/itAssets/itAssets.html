@@ -1,0 +1,62 @@
+<div class="col-xs-12 borderClass">
+<h4>Employee.<span></span></h4>
+    <div class="col-xs-12">
+        <h3>Hardware Allocation Details</h3>
+        <table ng-table  class="table table-bordered">
+            <tr ng-repeat="asset in ItAssets">
+                 <td data-title="'Asset Id '">{{asset.assetId}}</td>
+                <td data-title="'Asset Type'">{{asset.assetType}}</td>
+                <td data-title="'Allocation Date'">{{asset.allocationDate}}</td>
+            </tr>
+        </table>
+    </div> 
+     <div class="col-xs-12">
+        <h3>Software Allocation Details</h3>
+        <table ng-table  class="table table-bordered">
+            <tr ng-repeat="asset in ItAssets">
+                 <td data-title="'Software Asset Id '">{{asset.assetId}}</td>
+                <td data-title="'Software Type'">{{asset.assetType}}</td>
+                <td data-title="'Name'">{{asset.allocationDate}}</td>
+            </tr>
+        </table>
+    </div> 
+     <div class="col-xs-12">
+        <h3>Hardware Allocation History</h3>
+        <table ng-table  class="table table-bordered">
+            <tr ng-repeat="asset in ItAssets">
+                 <td data-title="'Asset Id'">{{asset.assetId}}</td>
+                <td data-title="'Asset Type'">{{asset.assetType}}</td>
+                <td data-title="'Allocation Date'">{{asset.allocationDate}}</td>
+                <td data-title="'De-Allocation Date'">{{asset.allocationDate}}</td>
+            </tr>
+        </table>
+    </div>
+<div><hr/></div>
+
+  <div class="col-xs-12">
+        <h3>DataCard Allocation Details</h3>
+        <table ng-table  class="table table-bordered">
+            <tr ng-repeat="asset in ItAssets">
+                 <td data-title="'Asset Id'">{{asset.assetId}}</td>
+                <td data-title="'Assigned To'">{{asset.assetType}}</td>
+                <td data-title="'Allocation Date'">{{asset.allocationDate}}</td>
+                <td data-title="'Comment'">{{asset.allocationDate}}</td> 
+                <td data-title="'Action'">{{asset.allocationDate}}</td>
+            </tr>
+        </table>
+    </div> 
+
+    <div class="col-xs-12">
+        <h3>DataCard Allocation History</h3>
+        <table ng-table  class="table table-bordered">
+            <tr ng-repeat="asset in ItAssets">
+                 <td data-title="'Asset Id'">{{asset.assetId}}</td>
+                <td data-title="'Assigned To'">{{asset.assetType}}</td>
+                <td data-title="'Allocation Date'">{{asset.allocationDate}}</td>
+                 <td data-title="'De-Allocation Date'">{{asset.allocationDate}}</td>
+                <td data-title="'Comment'">{{asset.allocationDate}}</td> 
+            </tr>
+        </table>
+    </div>
+
+</div>

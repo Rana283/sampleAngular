@@ -1,0 +1,32 @@
+<div class="col-sm-12">
+
+    <form class="form-horizontal" role="form">
+        <fieldset class="info_container_left ">
+            <legend class="info_container_left">Id Proofs</legend>
+            <div class="form-group">
+                <div class="col-xs-4">
+                    <span class="control-label">Type:
+                    </span>
+                </div>
+                <div class="col-xs-8">
+                    <select name="idProofs" id="idProofs" ng-model="selected_type" ng-options="idProofs.name for idProofs in proofsDoc">
+                        <option value="">Select type</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-4">
+                    <span class="control-label">ChooseFile:
+                    </span>
+                </div>
+                <div class="col-xs-8">
+                    <input type="file" 
+                    accept='image/*,application/pdf,image/x-eps' file-model="empDocs" />
+                </div>
+            </div>
+            <div class="form-group" align="center">
+                <button type="button" ng-click="getEmpDocsHandler()" class="btn btn-danger padding">Upload</button>
+            </div>
+        </fieldset>
+    </form>
+</div>

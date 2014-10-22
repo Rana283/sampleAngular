@@ -1,0 +1,241 @@
+<div class="col-xs-12 borderClass" id="hrForm">
+    <div class="col-xs-6">
+        <div class="col-xs-12">
+            <form class="form-horizontal" role="form">
+                <fieldset class="info_container_left ">
+                    <legend class="info_container_left">Personal</legend>
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <span>First name:</span>
+                        </div>
+
+                        <div class="col-xs-8">
+                            <p class="form-control-static">{{hrDetailsObj.empId}}</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-6">
+                            <span>Middle name:</span>
+                        </div>
+                        <div class="col-xs-6">
+                            <p class="form-control-static">{{hrDetailsObj.empType}}</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-4">  
+                            <span>Last name:
+                            </span>
+                        </div>
+                        <div class="col-xs-8">
+                            <p class="form-control-static">{{hrDetailsObj.dept}}</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <span class="control-label">Mother/Father name:
+                            </span>
+                        </div>
+                        <div class="col-xs-8">
+                            <p class="form-control-static">{{hrDetailsObj.practice}}</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <span class="control-label">Gender:
+                            </span>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="radio" name="gender" id="gender" value="1">
+                            <span>Male</span>
+                            <input type="radio" name="gender" id="gender" value="0">
+                            <span>Female</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <span class=" control-label">Date of Birth(Records):
+                            </span>
+                        </div>
+                        <div class="col-xs-8">
+                            <p class="form-control-static">{{hrDetailsObj.competency}}</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <span class=" control-label">Date of Birth(Actual):
+                            </span>
+                        </div>
+                        <div class="col-xs-8">
+                            <p class="form-control-static">{{hrDetailsObj.workLocation}}</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <span class=" control-label">Married:
+                            </span>
+                        </div>
+                        <div class="col-xs-8">
+                            <p class="form-control-static">{{hrDetailsObj.permanantLocation}}</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <span class=" control-label">Blood Group:
+                            </span>
+                        </div>
+                        <div class="col-xs-8">
+                            <p class="form-control-static">{{hrDetailsObj.permanantLocation}}</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <span class=" control-label">PAN no:
+                            </span>
+                        </div>
+                        <div class="col-xs-8">
+                            <p class="form-control-static">{{hrDetailsObj.permanantLocation}}</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <span class=" control-label">Aadhar no:
+                            </span>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control" ng-model="hrDetailsObj.wrkpalcePhenNumber" id="empersonal">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <span class=" control-label">Emergency Contact Name :<b class="mandetory_cls">*</b>
+                            </span>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control" ng-model="hrDetailsObj.pPhoneNumber" id="empersonal">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <span class=" control-label">Emergency Contact Phone:<b class="mandetory_cls">*</b>
+                            </span>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control" ng-model="hrDetailsObj.skypeId">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <span class=" control-label">Present Address:<b class="mandetory_cls">*</b>
+                            </span>
+                        </div>
+                        <div class="col-xs-8">
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <span class=" control-label">Permanent Address:<b class="mandetory_cls">*</b>
+                            </span>
+                        </div>
+                        <div class="col-xs-8">
+                            <textarea class="form-control" ng-model="hrDetailsObj.pAddress" value="hrDetailsObj.pAddress"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+                </from>
+        </div>
+    </div>
+    <div class="col-xs-6 removepadding">
+            <div class="col-xs-12">
+                <form class="form-horizontal removepadding" role="form">
+                    <fieldset class="info_container_left">
+                        <legend class="info_container_left">Work</legend>
+                        <div class="form-group">
+                            <span class="control-label">Total Experience:</span>
+                            <div>
+                                <p class="form-control-static"></p>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="control-label">Experience in Company:</span>
+                            <div>
+                                <p class="form-control-static">{{hrDetailsObj.empType}}</p>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class=" control-label">Reporting manager:</span>
+                            <div>
+                                <p class="form-control-static">{{hrDetailsObj.dept}}</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="control-label">Company Joining Date:</span>
+                            <div>
+                                <p class="form-control-static">{{hrDetailsObj.practice}}</p>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="control-label">Year of Career started:</span>
+                            <div>
+                                <p class="form-control-static">{{hrDetailsObj.competency}}</p>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="control-label">Probation:</span>
+                            <div>
+                                <p class="form-control-static">{{hrDetailsObj.workLocation}}</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="control-label">Billable:</span>
+                            <div>
+                                <p class="form-control-static">{{hrDetailsObj.permanantLocation}}</p>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="control-label">Job Status:</span>
+                            <div>
+                                <p class="form-control-static">{{hrDetailsObj.permanantLocation}}</p>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="col-xs-12">
+                <form class="form-horizontal removepadding" role="form">
+                    <fieldset class="info_container_left">
+                        <legend class="info_container_left">ID Proofs</legend>
+                        <div class="form-group">
+                            <div class="">
+                                <button type="button" ng-click="getEmpDocsHandler()"  class="btn btn-danger">Upload</button>
+
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+        </div>
+    </div>
+
+      <div align="center">
+            <button  class="btn btn-primary">Save</button>
+        </div>
+</div>

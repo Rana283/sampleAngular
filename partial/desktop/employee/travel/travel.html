@@ -1,0 +1,177 @@
+<div class="col-xs-12 borderClass" id="emptravel">
+    <div class="col-xs-7">
+
+        <div class="col-xs-12">
+            <form class="form-horizontal" role="form">
+                <fieldset class="info_container_left ">
+                    <legend class="info_container_left">Passport Details</legend>
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <span class="control-label">Nationality:
+                            </span>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control input-sm" id="empersonal">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <span class="control-label">Passport Id:
+                            </span>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control input-sm">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-4">
+                            <span class="control-label">Expiry Date:</span>
+                        </div>
+                        <div class="col-xs-8">
+                    <input type="text" class="form-control input-sm">
+                        </div>
+                    </div>
+                </fieldset>
+                </from>
+        </div>
+
+        <div class="col-xs-12">
+            <form class="form-horizontal" role="form">
+                <fieldset class="info_container_left ">
+                    <legend class="info_container_left">Visa Details</legend>
+
+                      <div class="form-group col-xs-12">
+                        <div class="col-xs-4">
+                            <span class=" control-label" style="font-weight:bold;">Visa 1</b>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                        <div class="col-xs-4">
+                            <span class="control-label">Country:
+                            </span>
+                        </div>
+                        <div class="col-xs-8">
+                        <select name="v1Country" id="v1Country" 
+                        ng-model="selected_v1country"
+                         ng-options="country.name for country in countryOptions">
+                      <option value="">Select Country</option>
+                </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                        <div class="col-xs-4">
+                       <span class="control-label">Visa Type:</span>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control input-sm">
+                        </div>
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                     <div class="col-xs-4">
+                       <span class="control-label">Visa Validity:
+                            </span>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control input-sm">
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group col-xs-12">
+                        <div class="col-xs-4">
+                            <span class=" control-label" style="font-weight:bold;">Visa 2</b>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                        <div class="col-xs-4">
+                            <span class="control-label">Country:
+                            </span>
+                        </div>
+                         <div class="col-xs-8">
+                        <select name="v2Country" id="v2Country" 
+                        ng-model="selected_v2country"
+                         ng-options="country.name for country in countryOptions">
+                      <option value="">Select Country</option>
+                </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                        <div class="col-xs-4">
+                       <span class="control-label">Visa Type:</span>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control input-sm">
+                        </div>
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                     <div class="col-xs-4">
+                       <span class="control-label">Visa Validity:
+                            </span>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control input-sm">
+                        </div>
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                        <div class="col-xs-4">
+                            <span class=" control-label" style="font-weight:bold;">Visa 3</b>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                        <div class="col-xs-4">
+                            <span class=" control-label">Country:
+                            </span>
+                        </div>
+                        <div class="col-xs-8">
+                        <select name="v3Country" id="v3Country" 
+                        ng-model="selected_v3country"
+                         ng-options="country.name for country in countryOptions">
+                      <option value="">Select Country</option>
+                </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                        <div class="col-xs-4">
+                            <span class="control-label">Visa Type:</span>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control input-sm">
+                        </div>
+                    </div>
+
+                    <div class="form-group col-xs-12">
+                        <div class="col-xs-4">
+                            <span class=" control-label">Visa Validity:</span>
+                        </div>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control input-sm input-sm">
+                        </div>
+                    </div>
+
+                </fieldset>
+                </from>
+        </div>
+
+        <div align="center"  class="col-sm-offset-6  col-xs-12">
+            <button class="btn btn-primary">Save</button>
+        </div>
+    </div>
+
+    <div class="col-xs-4">
+    </div>
+</div>

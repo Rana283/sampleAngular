@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html ng-app="MySpace">
+
+<head>
+    <title>MySpace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="app.less" type="text/css" rel="stylesheet/less">
+    <link href="bower_components/ng-table/ng-table.css" type="text/css">
+</head>
+
+<body>
+
+    <!-- Livereload script for development only (stripped during dist build) -->
+    <script src="http://localhost:35729/livereload.js" data-concat="false"></script>
+
+    <!-- JS from Bower Components -->
+    <script src="bower_components/less.js/dist/less-1.6.2.js" data-concat="false"></script>
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-ui-utils/ui-utils.js"></script>
+    <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+     <script src="bower_components/ng-grid/ng-grid-2.0.13.min.js"></script> 
+      <script src="bower_components/ng-table/ng-table.js"></script>
+      <script src="bower_components/ngDialog/js/ngDialog.js"></script>
+    <!-- Add New Bower Component JS Above -->
+
+
+    <script src='dependencies-desktop.js' data-concat="false"></script>
+
+    <!-- Main App JS -->
+    <script src="app.js"></script>
+    <script src="partial/desktop/auth/auth.js"></script>
+    <script src="partial/desktop/changePassword/changePassword.js"></script>
+    <script src="partial/desktop/header/header.js"></script>
+    <script src="partial/desktop/body/body.js"></script>
+    <script src="partial/desktop/footer/footer.js"></script>
+    <script src="service/menuService.js"></script>
+    <script src="service/user/userService.js"></script>
+    <script src="partial/desktop/employee/employee.js"></script><script src="partial/desktop/employee/primary/primary.js">
+     </script>
+     <script src="partial/desktop/employee/hr/hr.js">
+     </script>
+    <script src="partial/desktop/employee/travel/travel.js">
+     </script> 
+     <script src="partial/desktop/employee/experience/experience.js">
+     </script>
+      <script src="partial/desktop/employee/education/education.js">
+     </script>
+      <script src="partial/desktop/employee/projectAllocation/projectAllocation.js">
+     </script> 
+     <script src="partial/desktop/employee/skills/skills.js">
+     </script>
+      <script src="partial/desktop/employee/healthInsurance/insurance.js">
+     </script>
+    <script src="partial/desktop/employee/vehicleDetails/vehicle.js">
+    </script> 
+     <script src="partial/desktop/employee/itAssets/itAssets.js">
+    </script>
+
+ <script src="partial/desktop/employee/empExtensions/empExtensions.js">
+    </script>
+ <script src="partial/desktop/employee/policy/policy.js">
+    </script>
+ <script src="partial/desktop/employee/holidays/holidays.js">
+    </script>
+
+    <script src="directive/my-awesome-directive.js"></script>
+    <!-- Add New Component JS Above -->
+
+
+    <div class="container-fluid">
+
+       <!--  <div class="row">
+            <header ui-view="header"></header>
+        </div>
+
+        <div class="row">
+            <section>
+                <div ui-view='body'></div>
+            </section>
+        </div>
+
+        <div class="row">
+            <footer ui-view="footer"></footer>
+        </div> -->
+        <div class="row" ui-view></div>
+
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<div class="col-xs-12 borderClass">
+
+    <div class="col-xs-12">
+        <table ng-table  class="table table-bordered">
+            <tr ng-repeat="user in empExperience">
+                <td data-title="'S.Num'">{{$index+1}}</td> 
+                 <td data-title="'Companay Name'">{{user.CompanayName}}</td>
+                <td data-title="'Location'">{{user.Location}}</td>
+                <td data-title="'Designation'">{{user.Designation}}</td>
+                <td data-title="'StartDate'">{{user.StartDate}}
+                </td> 
+                <td data-title="'EndDate'">{{user.EndDate}}
+                </td>
+                <td data-title="'Total Experience'">{{user.TotalExperience}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

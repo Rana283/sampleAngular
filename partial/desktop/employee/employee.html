@@ -1,0 +1,11 @@
+<div id="tabs" class="row-fluid" ng-controller="empCtrl">
+    <div class="col-xs-12 content">
+        <ul class="nav nav-tabs" role="tablist">
+            <li ng-repeat="tab in tabs">
+            	<a ng-click="setState(tab.title)" class="tabMenu"ng-class="{selectedtabState:highlightSubmenu(tab.title)}">{{tab.title}}</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-xs-12 tab_contentent" ui-view>
+    </div>
+</div>

@@ -1,0 +1,75 @@
+<div class="col-xs-12 borderClass" ng-controller="assetCtrl">
+    <div class="col-xs-12">
+        <form class="form-horizontal" role="form">
+            <fieldset class="info_container_left ">
+                <legend class="info_container_left">Current Allocation</legend>
+                <div class="form-group col-xs-4">
+                    <span class="control-label">Project Allocation</span>
+                    <p class="form-control-static" ng-bind="projectAllObj.pAllocation"></p>
+                </div>
+                <div class="form-group col-xs-4">
+                    <span class="control-label">Billing Allocation</span>
+                    <p class="form-control-static" ng-bind="projectAllObj.pAllocation"></p>
+                </div>
+                <div class="form-group col-xs-4">
+                    <span class="control-label">Non-Billing Allocation</span>
+                    <p class="form-control-static" ng-bind="projectAllObj.pAllocation"></p>
+                </div>
+            </fieldset>
+            </from>
+            <div align="left">
+                <button class="btn btn-danger"  ng-click="editClientDetailsHander()">Edit Client Details</button>
+            </div>
+    </div>
+
+    <div class="col-xs-12">
+        <fieldset class="info_container_left ">
+            <legend class="info_container_left">Allocation Details</legend>
+            <table ng-table class="table table-bordered">
+                <tr ng-repeat="allocationD in proAlloationArray">
+                    <td data-title="'Client Name'">{{client_name}}</td>
+                    <td data-title="'ProjectName'"></td>
+                    <td data-title="'Project PM'"></td>
+                    <td data-title="'Work location'"></td>
+                    <td data-title="'Allocation Type'"></td>
+                    <td data-title="'Allocation % '"></td>
+                    <td data-title="'Start Date'"></td>
+                    <td data-title="'End Date'"></td>
+                    <td  data-title="'Client Email ID'">
+                        <div ng-show="custom">
+                            <input type="text" class="form-control">
+                        </div>
+                    </td>
+                    <td  data-title="'Client Email ID'">
+                        <div ng-show="custom">
+                            <input type="text" class="form-control">
+                        </div>
+
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+          <div ng-show="custom" align="center">
+                <button class="btn btn-success">Save</button>
+            </div>
+    </div>
+
+    <div class="col-xs-12">
+        <fieldset class="info_container_left ">
+            <legend class="info_container_left">Allocation History</legend>
+            <table ng-table class="table table-bordered">
+                <tr ng-repeat="historyDetails in projectHistoryDetails">
+                    <td data-title="'Client Name'"></td>
+                    <td data-title="'ProjectName'"></td>
+                    <td data-title="'Project PM'"></td>
+                    <td data-title="'Work location'"></td>
+                    <td data-title="'Allocation Type'"></td>
+                    <td data-title="'Allocation % '"></td>
+                    <td data-title="'Allocation Start Date'"></td>
+                    <td data-title="'Allocation End Date'"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+
+</div>

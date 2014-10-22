@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-md-offset-4">
+           
+            <div class="account-wall">
+                 <h1 class="text-center login-title">Myspace Login</h1>
+                <form name="loginForm" class="form-signin" novalidate>
+                    <input type="text" ng-model="username" class="form-control" placeholder="UserName" required autofocus>
+                    <input type="password" ng-model="password" class="form-control" placeholder="Password" required>
+                    <button class="btn btn-lg btn-primary btn-block" ng-disabled="loginForm.$invalid" ng-click="authicationHandler()" type="submit">
+                        Sign in</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

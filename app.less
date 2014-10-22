@@ -1,0 +1,47 @@
+@import "bower_components/bootstrap/less/bootstrap.less";
+//@import "bower_components/bootstrap/less/theme.less";
+@import "bower_components/font-awesome/less/font-awesome.less";
+@fa-font-path: "bower_components/font-awesome/fonts";
+
+/* Component LESS */
+@import "partial\desktop\auth\auth.less";
+@import "partial\desktop\changePassword\changePassword.less";
+@import "partial\desktop\body\body.less";
+@import "partial\desktop\footer\footer.less";
+@import "partial\desktop\header\header.less";
+@import "partial\desktop\assets\mainStyles.less";
+
+@import "bower_components/ngDialog/css/ngDialog.css";
+@import "bower_components/ngDialog/css/ngDialog-theme-default.css";
+@import "bower_components/ngDialog/css/ngDialog-theme-plain.css";
+
+
+@import "partial\desktop\employee\employee.less";
+@import "partial\desktop\employee\primary\primary.less";
+@import "partial\desktop\employee\hr\hr.less";
+@import "partial\desktop\employee\hr\components\upload.less";
+@import "partial\desktop\employee\education\education.less";
+@import "partial\desktop\employee\experience\experience.less";
+@import "partial\desktop\employee\travel\travel.less";
+@import "partial\desktop\employee\skills\skills.less";
+@import "partial\desktop\employee\empExtensions\empExtensions.less";
+@import "partial\desktop\employee\policy\policy.less";
+@import "partial\desktop\employee\holidays\holidays.less";
+@import "bower_components/ng-table/ng-table.less";
+
+/* Add Component LESS Above */
+
+/* Required for Angular UI Bootstrap */
+.nav, .pagination, .carousel a { cursor: pointer; }
+
+/* Personal preference for BS modal.  The LESS below makes the backdrop white and
+   causes the modal to fade in rather than slide in. */
+//@modal-backdrop-bg: white;
+//.modal {
+//	&.fade {
+//		.transition(opacity .3s);
+//	}
+//	&.fade .modal-dialog {
+//		.translate(0,0);
+//	}
+//}

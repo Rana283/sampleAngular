@@ -1,0 +1,77 @@
+<div class="col-xs-12 borderClass" ng-controller="assetCtrl">
+    <div class="col-xs-12">
+        <div class="col-xs-6">
+            <fieldset class="info_container_left ">
+                <legend class="info_container_left">Resume</legend>
+                <div class="form-group">
+                    <input type="file" file-model="empResume" />
+                    <span>Upload Resume(Max size 2Mb)</span><br>
+                    <span>Resume Last Updated:</span>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <div class="col-xs-12">
+        <div class="col-xs-6">
+
+            <fieldset class="info_container_left ">
+                <legend class="info_container_left">Core Skills</legend>
+                <div class="form-group">
+                    <div class="col-xs-5">
+                        <span class=" control-label">Summary</span>
+                    </div>
+                    <div class="col-xs-7">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+
+            </fieldset>
+        </div>
+    </div>
+    <div class="col-xs-12">
+        <fieldset class="info_container_left ">
+            <legend class="info_container_left">Skill Details</legend>
+            <div class="form-group">
+
+                <table ng-table class="table table-bordered">
+                    <tr ng-repeat="skills in SkillDetailsArray">
+                        <td  data-title="'Category'">{{skills.category}}
+                            <div class="inline_flex">
+                                <span><b class="mandetory_cls">*</b></span>
+                              <select name="skillCategory" id="skillCategory" ng-model="selected_category" 
+                                ng-options="skillCategory.name for skillCategory in categorys">
+                                    <option value="">Select Category</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td data-title="'Skill Name'">
+                            <div class="inline_flex">
+                                  <span><b class="mandetory_cls">*</b></span>
+                                <select name="skillName" id="skillName" ng-model="selected_Skill" 
+                                ng-options="skills.name for skills in skillNames">
+                                    <option value="">Select Skill</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td data-title="'Specific Skills'">
+                            <div>
+                                <input type="text" class="form-control input-sm">
+                            </div>
+                        </td>
+                        <td data-title="' '">
+                <div class="icon-bullet-add" ng-show="$last" ng-click="addNewRowHandler()">
+                            </div> 
+                            <div ng-hide="$last" ng-click="removeRow()" class="icon-bullet-delete">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </fieldset>
+        <div>
+            <div align="center">
+                <button class="btn btn-success">Save</button>
+            </div>
+
+        </div>
